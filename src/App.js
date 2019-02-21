@@ -9,7 +9,7 @@ const Header = () => {
 const Landing = () => {
   return (
     <div className="title">
-      Your destination bachelorette, without the stress of planning it.
+      Your destination bachelorette, minus the stress of planning it.
     </div>
   );
 };
