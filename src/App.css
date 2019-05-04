@@ -1,5 +1,9 @@
 .body {
-  font-family: ;
+}
+
+.logo {
+  width: 163px;
+  height: 61.1249999236px;
 }
 
 .App {
@@ -10,24 +14,34 @@
 .header {
   display: flex;
   justify-content: center;
-  padding: 40px 40px;
+  padding: 20px 40px 10px 40px;
   font-size: 1.5em;
   color: #162335;
   font-weight: bold;
+
   font-family: "Playfair Display";
+}
+.main-container {
+  width: 100%;
+  height: 300px;
+}
+
+.main-container img {
+  width: 100%;
 }
 
 .title {
   display: flex;
   justify-content: center;
-  font-size: 2em;
+  font-size: 2.5em;
   align-items: center;
   flex-direction: column;
-  padding: 77px 40px 170px 40px;
+  padding: 20px 40px 134px 40px;
   font-weight: bold;
-  color: #162335;
+  color: #e7d7d2;
+  text-transform: uppercase;
+  letter-spacing: 4px;
   position: relative;
-  background-color: white;
   font-family: "Hammersmith One", sans-serif;
 }
 
@@ -47,6 +61,7 @@
   color: white;
   font-size: 1.1rem;
   border-radius: 4px;
+  letter-spacing: normal;
   text-transform: uppercase;
 }
 
@@ -55,6 +70,12 @@
   text-align: left;
   display: flex;
   justify-content: space-between;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  padding: 20px;
 }
 
 .separator {
@@ -92,15 +113,20 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  font-weight: bold;
+  padding-top: 20px;
   background: linear-gradient(to top, #f1e3d0, #ffffff 93%);
-  padding: 20px 0px 50px 0px;
 }
-.how-works-title {
+.how-works-title,
+.destinations-title {
   font-family: "Playfair Display", sans-serif;
-  margin-top: 35px;
   font-size: 1.8em;
-  margin-bottom: 40px;
+  font-style: italic;
+  color: #d7a6b2;
+  font-weight: bold;
+}
+
+.first-step {
+  margin-top: 20px;
 }
 
 .step {
@@ -117,6 +143,7 @@
 
 .small-icon {
   width: 80px;
+  margin-top: 20px;
 }
 
 .step-title {
@@ -124,8 +151,6 @@
   margin: 15px 0px;
 }
 .step-body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
   font-size: 1em;
   padding: 20px;
   padding-top: 0px;
@@ -163,21 +188,23 @@
   padding-top: 40px;
 }
 
-.destinations-title {
-  color: #162335;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.5em;
-}
-
 .destination-img {
   width: 100%;
   height: 100%;
-  border-radius: 5px;
+  object-fit: cover;
+  top: 10px;
+}
+
+.destination-name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.4em;
+  margin-top: 10px;
 }
 
 .destination-img-container {
   width: 100%;
+  border-radius: 3px;
   height: 400px;
 }
 

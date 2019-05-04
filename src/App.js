@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+import styled from "@emotion/styled";
 import "./App.css";
 import check from "./check.png";
 import down from "./down.png";
@@ -7,15 +7,24 @@ import phone from "./phone.png";
 import cal from "./calendar.svg";
 import polish from "./polish.png";
 import pack from "./pack.png";
+import car from "./car.jpg";
+import logo from "./logo.png";
+import ny from "./newyork.jpg";
+import nola from "./neworleans.jpg";
+import napa from "./napa.jpg";
 
 const Header = () => {
-  return <div className="header">LUXETTE</div>;
+  return (
+    <div className="header">
+      <img className="logo" src={logo} />
+    </div>
+  );
 };
 
 const Landing = () => {
   return (
     <div className="title">
-      <div>Luxury bachelorettes planned by us, tailored to you.</div>
+      <div>Luxury bachelorettes. Planned by us, tailored to you.</div>
       <div className="main-cta">
         <div>See destinations</div>
         <div>
@@ -53,7 +62,7 @@ const Destination = props => {
       <div className="destination-img-container">
         <img className="destination-img" src={props.img} alt="alt" />
       </div>
-      <div className="destination-title">{props.title}</div>
+      <div className="destination-name">{props.title}</div>
     </div>
   );
 };
@@ -61,19 +70,10 @@ const Destination = props => {
 const Destinations = () => {
   return (
     <div className="destinations-section">
-      <div className="destinations-title">Destinations!</div>
-      <Destination
-        img="https://leadingestates.com/wp-content/uploads/2015/08/010-South-Lake-Tahoe-CA-02.jpg"
-        title="Lake Tahoe"
-      />
-      <Destination
-        img="http://alexandranapoli.com/wp-content/uploads/2018/03/IMG-5242.jpg"
-        title="New Orleans"
-      />
-      <Destination
-        img="https://media.brides.com/photos/580e5837f3800bdd3118b7bb/1:1/w_767/blogs-aisle-say-napa-valley-bachelorette-party.jpg"
-        title="Napa Valley"
-      />
+      <div className="destinations-title">Recommended destinations</div>
+      <Destination img={ny} title="New York" />
+      <Destination img={nola} title="New Orleans" />
+      <Destination img={napa} title="Napa Valley" />
     </div>
   );
 };
@@ -85,8 +85,22 @@ const HowWorks = () => {
   const packBody = `Now comes the fun part. You get to sit back and relax while we handle the rest. We will even include a packing list to make sure that everything feels seamless from the start. Get ready to have the most perfect weekend with your best friends. We will be here the whole time to make sure of it! `;
   return (
     <div className="how-works">
+      <div className="how-works-title">About us</div>
+      <p>
+        A luxurious, photo-worthy, stress-free girls getaway is right at your
+        fingertips. Brides to be, let our travel & event specialists bring your
+        dream bachelorette one step closer to reality. And on the flip side, if
+        you are the Maid of Honor, Mother of the Bride, or the friend that is
+        the resident party planner, let Luxette help you design a girls weekend
+        that the bride-to-be is sure to never forget and that you can actually
+        enjoy. We specialize in white-glove customized travel planning for those
+        groups looking to really go all out on this celebratory weekend.
+        However, if you just need some hot spot suggestions on where to go,
+        stay, and eat in a city you’ve never been to, we are at your service.
+      </p>
       <div className="how-works-title">How does it work?</div>
       <Step
+        className="first-step"
         icon={phone}
         small
         title="Destination consultation"
@@ -115,6 +129,12 @@ const Step = ({ icon, title, body, small }) => {
   );
 };
 
+const MainImage = () => (
+  <div className="main-container">
+    <img src={car} />
+  </div>
+);
+
 const Separator = () => <div className="separator" />;
 
 class App extends Component {
@@ -122,6 +142,7 @@ class App extends Component {
     return (
       <div>
         <Header />
+        <MainImage />
         <Landing />
         <HowWorks />
         <Destinations />
