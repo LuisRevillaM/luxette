@@ -46,14 +46,13 @@ body {
   font-weight: bold;
   color: #e7d7d2;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
   position: relative;
   font-family: "Hammersmith One", sans-serif;
 }
 
 .main-cta {
   background-color: #162335;
-  width: 55vw;
   font-weight: bold;
   position: absolute;
   text-decoration: none;
