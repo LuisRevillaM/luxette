@@ -27,7 +27,7 @@ const Landing = () => {
 
       <div>Planned by us, tailored to you.</div>
       <a href="mailto:lauren.e.blocker@gmail.com" className="main-cta">
-        <div>See destinations</div>
+        <div>Get in touch!</div>
         <div>
           <img className="down" src={down} alt="down" />
         </div>
