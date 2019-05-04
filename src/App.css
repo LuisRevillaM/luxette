@@ -39,10 +39,10 @@ body {
 .title {
   display: flex;
   justify-content: center;
-  font-size: 2.5em;
+  font-size: 2em;
   align-items: center;
   flex-direction: column;
-  padding: 20px 40px 134px 40px;
+  padding: 20px 20px 134px 20px;
   font-weight: bold;
   color: #e7d7d2;
   text-transform: uppercase;
@@ -53,9 +53,10 @@ body {
 
 .main-cta {
   background-color: #162335;
-  width: 50vw;
+  width: 55vw;
   font-weight: bold;
   position: absolute;
+  text-decoration: none;
   bottom: 40px;
   height: 50px;
   display: flex;
@@ -65,7 +66,7 @@ body {
   font-family: "Hammersmith One", sans-serif;
   padding: 0px 15px;
   color: white;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   border-radius: 4px;
   letter-spacing: normal;
   text-transform: uppercase;
@@ -133,6 +134,7 @@ p {
   text-align: center;
   color: #d7a6b2;
   font-weight: bold;
+  padding: 0px 20px;
 }
 
 .destinations-title {
@@ -224,4 +226,15 @@ p {
 
 .destination {
   margin: 20px 0px;
+}
+
+.client {
+  font-weight: bold;
+  padding: 0;
+  padding-left: 20px;
+}
+
+.testimonials {
+  background: #f1e3d0;
+  padding-bottom: 30px;
 }
