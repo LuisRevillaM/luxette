@@ -78,6 +78,24 @@ const Destinations = () => {
   );
 };
 
+const About = () => (
+  <div className="about">
+    <div className="how-works-title">About us</div>
+    <p>
+      A luxurious, photo-worthy, stress-free girls getaway is right at your
+      fingertips. Brides to be, let our travel & event specialists bring your
+      dream bachelorette one step closer to reality. And on the flip side, if
+      you are the Maid of Honor, Mother of the Bride, or the friend that is the
+      resident party planner, let Luxette help you design a girls weekend that
+      the bride-to-be is sure to never forget and that you can actually enjoy.
+      We specialize in white-glove customized travel planning for those groups
+      looking to really go all out on this celebratory weekend. However, if you
+      just need some hot spot suggestions on where to go, stay, and eat in a
+      city you’ve never been to, we are at your service.
+    </p>
+  </div>
+);
+
 const HowWorks = () => {
   const callBody = `Take a look at our different destinations & packages, then send us a note! Once we’ve exchanged greetings and hellos, we’ll send you a more in-depth questionnaire to learn more about the bride to be and how your group likes to travel. From there we will schedule a consultation call to get to know each other and run through some initial ideas. Don’t forget: if you like what you see but don’t see your destination offered, we are happy to customize something for you. We love researching new places!`;
   const makeBody = `Now it’s time for us to make the magic happen! Once we’ve collected everything we need to know from likes to dislikes, budget, and allergies, we will draft an itinerary and keep drafting until it is 100% to your liking. From there we will require a 50% deposit to make reservations & book activities.`;
@@ -85,19 +103,7 @@ const HowWorks = () => {
   const packBody = `Now comes the fun part. You get to sit back and relax while we handle the rest. We will even include a packing list to make sure that everything feels seamless from the start. Get ready to have the most perfect weekend with your best friends. We will be here the whole time to make sure of it! `;
   return (
     <div className="how-works">
-      <div className="how-works-title">About us</div>
-      <p>
-        A luxurious, photo-worthy, stress-free girls getaway is right at your
-        fingertips. Brides to be, let our travel & event specialists bring your
-        dream bachelorette one step closer to reality. And on the flip side, if
-        you are the Maid of Honor, Mother of the Bride, or the friend that is
-        the resident party planner, let Luxette help you design a girls weekend
-        that the bride-to-be is sure to never forget and that you can actually
-        enjoy. We specialize in white-glove customized travel planning for those
-        groups looking to really go all out on this celebratory weekend.
-        However, if you just need some hot spot suggestions on where to go,
-        stay, and eat in a city you’ve never been to, we are at your service.
-      </p>
+      <About />
       <div className="how-works-title">How does it work?</div>
       <Step
         className="first-step"
