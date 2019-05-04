@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import styled from "@emotion/styled";
 import "./App.css";
 import check from "./check.png";
 import down from "./down.png";
